@@ -5,6 +5,7 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'media',
   theme: {
     extend: {
       backgroundImage: {
@@ -12,6 +13,12 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+        'unbounded': ['Unbounded', 'cursive']
+      },
+
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
@@ -26,6 +33,16 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      colors: {
+        "dark-background": "rgb(0,0,25)",
+        "light-background": "rgb(205,205,205)",
+      },
+      boxShadow: {
+        'lg': '0 0 8px 1px rgba(0, 217, 255)',
+        'md': '0 0 20px 0 rgba(0, 217, 255)',
+        'xl': '0 0 25px 1px rgba(14, 165, 233)',
+      }
+
     },
   },
   plugins: [require('@tailwindcss/forms')],

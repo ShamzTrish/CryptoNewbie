@@ -1,14 +1,17 @@
-import Chat from '@/components/Chat'
-import './globals.css'
-import { Inter } from 'next/font/google'
 import Providers from '@/components/Providers'
+import './globals.css'
+import Chat from '@/components/Chatbot/Chat'
+import NavBar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import '@rainbow-me/rainbowkit/styles.css';
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export const metadata = {
   title: 'CryptoSupport',
   description: 'Your AI friend for your questions & answers',
 }
+
 
 export default function RootLayout({
   children,
@@ -17,12 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Providers>
-        <body className={inter.className}>
+      <body className={` bg-light-background dark:bg-dark-background`}>
+        <Providers>
+          <NavBar />
           <Chat />
           {children}
-        </body>
-      </Providers>
+          <Footer />
+        </Providers>
+      </body>
     </html>
   )
 }

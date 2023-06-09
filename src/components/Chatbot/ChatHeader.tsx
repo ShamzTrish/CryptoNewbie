@@ -12,7 +12,7 @@ const ChatHeader: FC<ChatHeaderProps> = ({ }) => {
             <p className='text-xs'>Chat with</p>
             <div className='flex gap-1.5 items-center'>
                 <p className='rounded-full w-2 h-2 bg-green-500' />
-                <p className='font-medium'>CryptoSupport messenger</p>
+                <p className='font-medium'>Newbie Support</p>
             </div>
         </div>
     </div>

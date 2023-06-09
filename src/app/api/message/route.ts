@@ -1,4 +1,4 @@
-import { chatbotPrompt } from "@/app/helpers/constants/chatbot-prompt"
+import { chatbotPrompt } from "@/helpers/constants/chatbot-prompt"
 import { ChatGPTMessage, OpenAIStream, OpenAIStreamPayload } from "@/lib/openai-stream"
 import { MessageSchemaArray } from "@/lib/validators/message"
 
