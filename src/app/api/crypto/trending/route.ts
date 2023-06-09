@@ -7,7 +7,7 @@ export async function GET(request: Request) {
         method: "GET",
         next: { revalidate: 60 },
         headers: {
-          accept: "application/json",
+          "Content-Type": "application/json",
         },
       }
     );
