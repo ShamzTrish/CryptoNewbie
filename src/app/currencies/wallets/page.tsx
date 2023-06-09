@@ -143,9 +143,9 @@ const page = ({ }) => {
                     {/* Ledger Nano X */}
                     <div className="w-50 max-w-sm bg-zinc-200 border border-gray-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="https://shop.ledger.com/products/ledger-nano-x" target='_blank'>
-                            <Image className="p-4 mb-5 rounded-t-lg" src={LedgerNanoX} alt="product image" />
+                            <Image className="p-4  rounded-t-lg" src={LedgerNanoX} alt="product image" />
                         </a>
-                        <div className="px-4 pb-4">
+                        <div className="px-5 pb-5">
                             <a href="https://shop.ledger.com/products/ledger-nano-x" target='_blank'>
                                 <h5 className="text-sm font-semibold tracking-tight text-gray-900 dark:text-white">Secure, buy, exchange, grow your crypto and your NFTs with our hardware wallet</h5>
                             </a>
@@ -158,8 +158,10 @@ const page = ({ }) => {
                                 <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
                             </div>
                             <div className="flex items-center justify-between">
-                                <span className="text-2xl font-bold text-gray-900 dark:text-white">$165</span>
-                                <a href="https://shop.ledger.com/products/ledger-nano-x" target='_blank' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View</a>
+                                <div>
+                                    <span className='font-thin text-xs pt-2 mr-1'>from</span><span className="text-2xl font-bold text-gray-900 dark:text-white">$165</span>
+                                </div>
+                                <a href="https://shop.ledger.com/products/ledger-nano-x" target='_blank' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-10 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View</a>
                             </div>
                         </div>
                     </div>
@@ -182,8 +184,10 @@ const page = ({ }) => {
                                 <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
                             </div>
                             <div className="flex items-center justify-between">
-                                <span className="text-2xl font-bold text-gray-900 dark:text-white">$148</span>
-                                <a href="https://bitbox.swiss/bitbox02/" target='_blank' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View</a>
+                                <div>
+                                    <span className='font-thin text-xs pt-2 mr-1'>from</span><span className="text-2xl font-bold text-gray-900 dark:text-white">$148</span>
+                                </div>
+                                <a href="https://shop.ledger.com/products/ledger-nano-x" target='_blank' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-10 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View</a>
                             </div>
                         </div>
                     </div>
@@ -206,8 +210,10 @@ const page = ({ }) => {
                                 <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
                             </div>
                             <div className="flex items-center justify-between">
-                                <span className="text-2xl font-bold text-gray-900 dark:text-white">$69</span>
-                                <a target='_blank' href="https://trezor.io/trezor-model-one" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View</a>
+                                <div>
+                                    <span className='font-thin text-xs pt-2 mr-1'>from</span><span className="text-2xl font-bold text-gray-900 dark:text-white">$69</span>
+                                </div>
+                                <a href="https://shop.ledger.com/products/ledger-nano-x" target='_blank' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-10 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View</a>
                             </div>
                         </div>
                     </div>

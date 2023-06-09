@@ -4,7 +4,7 @@ import cnLogo from '../images/CNlogoMini.png'
 
 const Footer = ({ }) => {
     return <>
-        <footer className="shadow mt-8 bg-slate-900 border-gray-700">
+        <footer className="sticky shadow mt-8 bg-slate-900 border-gray-700">
             <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-center">
                 <span className="flex items-center text-sm text-gray-500 sm:text-center">
                     <span>
