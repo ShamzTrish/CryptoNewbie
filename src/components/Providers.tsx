@@ -1,43 +1,71 @@
-"use client"
+'use client'
 
-import { CoinMarketProvider } from '@/context/cryptoCtx'
-import { MessageProvider } from '@/context/messages'
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
+import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 import { ThemeProvider } from 'next-themes'
 import React, { FC, ReactNode } from 'react'
-
 import {
+    RainbowKitProvider,
     getDefaultWallets,
-    RainbowKitProvider, darkTheme
+    connectorsForWallets,
+    darkTheme
 } from '@rainbow-me/rainbowkit';
+import {
+    argentWallet,
+    trustWallet,
+    ledgerWallet,
+} from '@rainbow-me/rainbowkit/wallets';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
-import { mainnet, polygon, optimism, arbitrum } from 'wagmi/chains';
-import { alchemyProvider } from 'wagmi/providers/alchemy';
+import { mainnet, polygon, optimism, arbitrum, goerli, bsc, bscTestnet } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
+import { CoinMarketProvider } from '@/context/cryptoCtx';
+import { MessageProvider } from '@/context/messages';
 
-const { chains, publicClient } = configureChains(
-    [mainnet, polygon, optimism, arbitrum],
+const { chains, publicClient, webSocketPublicClient } = configureChains(
     [
-        alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
-        publicProvider()
-    ]
+        mainnet,
+        polygon,
+        optimism,
+        bsc,
+        bscTestnet,
+        arbitrum,
+        ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [goerli] : []),
+    ],
+    [publicProvider()]
 );
 
-const { connectors } = getDefaultWallets({
-    appName: 'My RainbowKit App',
-    projectId: 'YOUR_PROJECT_ID',
-    chains
+const projectId = 'CryptoNewbie';
+
+const { wallets } = getDefaultWallets({
+    appName: 'CryptoNewbie',
+    projectId,
+    chains,
 });
+
+const demoAppInfo = {
+    appName: 'CryptoNewbie',
+};
+
+const connectors = connectorsForWallets([
+    ...wallets,
+    {
+        groupName: 'Other',
+        wallets: [
+            argentWallet({ projectId, chains }),
+            trustWallet({ projectId, chains }),
+            ledgerWallet({ projectId, chains }),
+        ],
+    },
+]);
 
 const wagmiConfig = createConfig({
     autoConnect: true,
     connectors,
-    publicClient
-})
-
-
+    publicClient,
+    webSocketPublicClient,
+});
 interface ProvidersProps {
-    children: ReactNode,
+    children: ReactNode
 }
 
 const Providers: FC<ProvidersProps> = ({ children }) => {
@@ -47,11 +75,10 @@ const Providers: FC<ProvidersProps> = ({ children }) => {
 
     return <QueryClientProvider client={queryClient}>
         <WagmiConfig config={wagmiConfig}>
-            <RainbowKitProvider chains={chains} theme={darkTheme({
+            <RainbowKitProvider chains={chains} appInfo={demoAppInfo} theme={darkTheme({
                 accentColor: 'transparent',
-                accentColorForeground: 'color: rgb(161 161 170)',
-                fontStack: 'rounded',
-
+                accentColorForeground: 'white',
+                fontStack: 'system'
             })}>
                 <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
                     <CoinMarketProvider>
@@ -66,6 +93,5 @@ const Providers: FC<ProvidersProps> = ({ children }) => {
         </WagmiConfig>
     </QueryClientProvider>
 }
-
 
 export default Providers
