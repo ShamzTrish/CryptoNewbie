@@ -16,7 +16,7 @@ const NavBar = () => {
 
     return (
         <nav className="bg-slate-900 border-gray-700">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-1">
+            <div className="max-w-screen-xl flex flex-wrap md:mx-5 lg:mx-auto items-center justify-between py-1">
                 <Link href='/'>
                     <Image className='w-40 h-15' src={CryptoNewbieNoBg} alt='' />
                 </Link>

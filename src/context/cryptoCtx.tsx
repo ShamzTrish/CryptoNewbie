@@ -126,7 +126,6 @@ export const CoinMarketProvider = ({ children }: { children: ReactNode }) => {
     }
 
     // tady dostavame detaily o coins
-
     const getCoinsDetails = async (id: string) => {
 
         try {
@@ -168,7 +167,16 @@ export const CoinMarketProvider = ({ children }: { children: ReactNode }) => {
     // getting trending coins
     const getTrendingData = async () => {
         try {
-            const rawResponse = await fetch(`/api/crypto/trending`);
+            const rawResponse = await fetch(
+                `https://api.coingecko.com/api/v3/search/trending`,
+                {
+                    method: "GET",
+                    next: { revalidate: 60 },
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                }
+            );
             const resData: ResponseTrendingData = await rawResponse.json();
 
             const data = resData.coins.map((coinData) => {
