@@ -6,7 +6,6 @@ import Footer from '@/components/Footer'
 import '@rainbow-me/rainbowkit/styles.css';
 
 
-
 export const metadata = {
   title: 'CryptoSupport',
   description: 'Your AI friend for your questions & answers',

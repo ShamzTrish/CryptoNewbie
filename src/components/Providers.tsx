@@ -1,6 +1,5 @@
 'use client'
 
-
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 import { ThemeProvider } from 'next-themes'
 import React, { FC, ReactNode } from 'react'
@@ -20,6 +19,7 @@ import { mainnet, polygon, optimism, arbitrum, goerli, bsc, bscTestnet } from 'w
 import { publicProvider } from 'wagmi/providers/public';
 import { CoinMarketProvider } from '@/context/cryptoCtx';
 import { MessageProvider } from '@/context/messages';
+import Moralis from 'moralis'
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
     [
@@ -64,6 +64,11 @@ const wagmiConfig = createConfig({
     publicClient,
     webSocketPublicClient,
 });
+
+Moralis.start({
+    apiKey: process.env.NEXT_PUBLIC_API_KEY
+})
+
 interface ProvidersProps {
     children: ReactNode
 }

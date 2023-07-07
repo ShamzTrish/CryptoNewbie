@@ -49,7 +49,7 @@ export const Connect = () => {
                                 );
                             }
                             return (
-                                <div style={{ display: 'flex', gap: 12 }}>
+                                <div className="block py-2 px-4 font-medium text-sm text-zinc-400 rounded-lg md:border md:border-transparent md:hover:border-solid hover:text-white mr-1 hover:md:shadow-lg" style={{ display: 'flex', gap: 12 }}>
                                     <button
                                         onClick={openChainModal}
                                         style={{ display: 'flex', alignItems: 'center' }}

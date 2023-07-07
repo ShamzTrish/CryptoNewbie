@@ -1,5 +1,6 @@
 
 import { CardData, ResponseChartDetailsData, ResponseData, ResponseDetailsData, ResponseTrendingData, TrendingData } from "@/lib/coinTypes/coinTypes"
+import { notFound } from "next/navigation"
 import { ReactNode, createContext, useState } from "react"
 
 // TS
@@ -84,100 +85,125 @@ export const CoinMarketProvider = ({ children }: { children: ReactNode }) => {
 
     // tahle funkce nam vytahuje vsecny data ktery chceme dostat z rawDat. 
     // tuhle funkci si pak zavolam v cardList a posilame sem cislo podle toho jestli user scrollnul na bottom of the page (page: number) 
+    // getting all our coins to be rendered on tha main page in Card component
     const getCoins = async (page: number) => {
         try {
             setIsLoading(true)
-            const rawResponse = await fetch(`/api/crypto/${page}`)
-            //here I'm taking the fetched data from CG and parse them through json and string result is saved into const data.
-            const data: ResponseData[] = await rawResponse.json()
-            console.log(data, 'DATA')
-            const newData = data.map((data: ResponseData) => {
-                const { id, symbol, name, image, current_price, market_cap, price_change_percentage_24h, market_cap_rank, sparkline_in_7d: { price }, price_change_percentage_7d_in_currency, price_change_percentage_1h_in_currency
-                } = data // here I choose which data I want to take out from all the coinGecco data I get from them.
+            const res = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=${page}&sparkline=true&price_change_percentage=1h%2C24h%2C7d&locale=en`, {
+                method: 'GET',
+                headers: {
+                    'accept': 'application/json'
+                }
+            })
+            const resData: ResponseData[] = await res.json();
 
+            // get only data we need
+            const newData = resData.map((data: ResponseData) => {
+                // here we deconstruct from the recieved data what we actual want to display
+                const { symbol, id, name, image, current_price, market_cap, price_change_percentage_24h, market_cap_rank, sparkline_in_7d: { price }, price_change_percentage_7d_in_currency, price_change_percentage_1h_in_currency } = data;
                 return {
                     symbol,
+                    id,
                     name,
                     image,
-                    currentPrice: current_price,
-                    marketCap: market_cap,
-                    priceChange: price_change_percentage_24h,
-                    priceChange1h: price_change_percentage_1h_in_currency
-                    ,
-                    id,
-                    marketRank: market_cap_rank,
                     chartData: price,
-                    priceChange7d: price_change_percentage_7d_in_currency
+                    marketCap: market_cap,
+                    currentPrice: current_price,
+                    marketRank: market_cap_rank,
+                    priceChange: price_change_percentage_24h,
+                    priceChange7d: price_change_percentage_7d_in_currency,
+                    priceChange1h: price_change_percentage_1h_in_currency
                 }
             })
 
-            console.log('NEW DATA', newData)
-
             setCoins((prevCoins) => [...prevCoins, ...newData])
+
+            if (!res.ok) {
+                throw new Error(`FAILED ${res.status}`)
+            }
             return newData
 
-
         } catch (error) {
-            console.log('MOJE error', error)
-
+            return new Response('Invalid request.', { status: 400 })
         } finally {
             setIsLoading(false)
         }
     }
 
-    // tady dostavame detaily o coins
-    const getCoinsDetails = async (id: string) => {
+    // getting details for eahc of our coins - we had to use different route to get information about each coin
+    const getCoinsDetails = async (coinId: string) => {
 
         try {
-            const rawResponse = await fetch(`/api/crypto/info/${id}`)
-            const data: ResponseDetailsData = await rawResponse.json()
+            setIsLoading(true)
+            const res = await fetch(`https://api.coingecko.com/api/v3/coins/${coinId}?localization=false&sparkline=true`, {
+                method: 'GET',
+                headers: {
+                    'accept': 'application/json'
+                }
+            })
+            const resData: ResponseDetailsData = await res.json();
 
-            setDetailCoin(data)
+            if (!res.ok) {
+                throw new Error(`FAILED ${res.status}`)
+            }
 
-            return data
+            setDetailCoin(resData)
+            setIsLoading(false)
+            return resData
 
-        } catch (error) {
-            throw new Error('Something went wrong!')
-
+        } catch (e) {
+            notFound()
+        } finally {
+            setIsLoading(false)
         }
     }
 
-    // getting dATA FOR OUR CHART
+
+    // getting coin chart details
     const getChartData = async (id: string) => {
 
         try {
-            const rawResponse = await fetch(`/api/crypto/info/chart/${id}`)
-            const resData = await rawResponse.json()
-            const data: ResponseChartDetailsData[] = resData.prices.map((value: any) => {
-                return { x: value[0], y: value[1].toFixed(2) }
+            const response = await fetch(`https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=usd&days=365&interval=monthly`, {
+                method: 'GET',
+                headers: {
+                    'accept': 'application/json'
+                }
             })
+
+            const resData = await response.json();
+
+            if (!response.ok) {
+                throw new Error(`FAILED ${response.status}`)
+            }
+
+            const data: ResponseChartDetailsData[] = resData.prices.map((oneValue: any) => ({
+                x: oneValue[0], y: oneValue[1].toFixed(2)
+            }))
 
             setChartData(data)
 
             return data
 
-
-        } catch (error) {
-            throw new Error('Something went wrong!')
+        } catch (e) {
+            throw new Error('Something went wrong')
         }
-
     }
 
-
-    // getting trending coins
+    // getting top 5 trending coins
     const getTrendingData = async () => {
         try {
-            const rawResponse = await fetch(
-                `https://api.coingecko.com/api/v3/search/trending`,
+            const response = await fetch('https://api.coingecko.com/api/v3/search/trending',
                 {
-                    method: "GET",
-                    next: { revalidate: 60 },
                     headers: {
-                        "Content-Type": "application/json",
-                    },
+                        'accept': 'application/json'
+                    }
                 }
             );
-            const resData: ResponseTrendingData = await rawResponse.json();
+
+            if (!response.ok) {
+                throw new Error(`FAILED ${response.status}`);
+            }
+            const resData: ResponseTrendingData = await response.json();
 
             const data = resData.coins.map((coinData) => {
                 const { item: { market_cap_rank, name, large, slug } } = coinData;
@@ -195,7 +221,7 @@ export const CoinMarketProvider = ({ children }: { children: ReactNode }) => {
             return top5Coins;
 
         } catch (error) {
-            throw new Error('Something went wrong!')
+            throw new Error('Something went wrong')
         }
     }
 

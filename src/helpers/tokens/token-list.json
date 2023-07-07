@@ -1,0 +1,177 @@
+[
+    {
+        "ticker": "USDC",
+        "img": "https://cdn.moralis.io/eth/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.png",
+        "name": "USD Coin",
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "decimals": 6
+    },
+    {
+        "ticker": "LINK",
+        "img": "https://cdn.moralis.io/eth/0x514910771af9ca656af840dff83e8264ecf986ca.png",
+        "name": "Chainlink",
+        "address": "0x514910771af9ca656af840dff83e8264ecf986ca",
+        "decimals": 18
+    },
+    {
+        "ticker": "USDT",
+        "img": "https://cdn.moralis.io/eth/0xdac17f958d2ee523a2206206994597c13d831ec7.png",
+        "name": "Tether USD",
+        "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "decimals": 6
+    },
+    {
+        "ticker": "GUSD",
+        "img": "https://cdn.moralis.io/eth/0x056fd409e1d7a124bd7017459dfea2f387b6d5cd.png",
+        "name": "Gemini USD",
+        "address": "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd",
+        "decimals": 2
+    },
+    {
+        "ticker": "RNDR",
+        "img": "https://cdn.moralis.io/eth/0x6de037ef9ad2725eb40118bb1702ebb27e4aeb24.png",
+        "name": "Render",
+        "address": "0x6de037ef9ad2725eb40118bb1702ebb27e4aeb24",
+        "decimals": 18
+    },
+    {
+        "ticker": "APE",
+        "img": "https://cryptologos.cc/logos/apecoin-ape-ape-logo.png?v=025",
+        "name": "ApeCoin",
+        "address": "0x4d224452801aced8b2f0aebe155379bb5d594381",
+        "decimals": 18
+    },
+    {
+        "ticker": "SAND",
+        "img": "https://cryptologos.cc/logos/the-sandbox-sand-logo.png?v=025",
+        "name": "The Sandbox",
+        "address": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0",
+        "decimals": 18
+    },
+    {
+        "ticker": "DAI",
+        "img": "https://cdn.moralis.io/eth/0x6b175474e89094c44da98b954eedeac495271d0f.png",
+        "name": "Dai Stablecoin",
+        "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+        "decimals": 18
+    },
+    {
+        "ticker": "ARB",
+        "img": "https://cryptologos.cc/logos/arbitrum-arb-logo.png?v=025",
+        "name": "Arbitrum",
+        "address": "0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1",
+        "decimals": 18
+    },
+    {
+        "ticker": "WETH",
+        "img": "https://cdn.moralis.io/eth/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.png",
+        "name": "Wrapped Ethereum",
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "decimals": 18
+    },
+    {
+        "ticker": "WBTC",
+        "img": "https://cdn.moralis.io/eth/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.png",
+        "name": "Wrapped Bitcoin",
+        "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+        "decimals": 8
+    },
+    {
+        "ticker": "MATIC",
+        "img": "https://cdn.moralis.io/eth/0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0.png",
+        "name": "Matic Token",
+        "address": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+        "decimals": 18
+    },
+    {
+        "ticker": "ENJ",
+        "img": "https://cdn.moralis.io/eth/0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c.png",
+        "name": "Enjin Coin",
+        "address": "0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c",
+        "decimals": 18
+    },
+    {
+        "ticker": "1INCH",
+        "img": "https://cdn.moralis.io/eth/0x111111111117dc0aa78b770fa6a738034120c302.png",
+        "name": "1inch Protocol",
+        "address": "0x111111111117dc0aa78b770fa6a738034120c302",
+        "decimals": 18
+    },
+    {
+        "ticker": "UNI",
+        "img": "https://cdn.moralis.io/eth/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984.png",
+        "name": "Uniswap",
+        "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+        "decimals": 18
+    },
+    {
+        "ticker": "CRV",
+        "img": "https://cdn.moralis.io/eth/0xd533a949740bb3306d119cc777fa900ba034cd52.png",
+        "name": "Curve DAO Token",
+        "address": "0xd533a949740bb3306d119cc777fa900ba034cd52",
+        "decimals": 18
+    },
+    {
+        "ticker": "MKR",
+        "img": "https://cdn.moralis.io/eth/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2.png",
+        "name": "Maker",
+        "address": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
+        "decimals": 18
+    },
+    {
+        "ticker": "SHIB",
+        "img": "https://cdn.moralis.io/eth/0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce.png",
+        "name": "Shiba Inu",
+        "address": "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce",
+        "decimals": 18
+    },
+    {
+        "ticker": "AAVE",
+        "img": "https://cdn.moralis.io/eth/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9.png",
+        "name": "Aave",
+        "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
+        "decimals": 18
+    },
+    {
+        "ticker": "ANKR",
+        "img": "https://cdn.moralis.io/eth/0x8290333cef9e6d528dd5618fb97a76f268f3edd4.png",
+        "name": "Ankr",
+        "address": "0x8290333cef9e6d528dd5618fb97a76f268f3edd4",
+        "decimals": 18
+    },
+    {
+        "ticker": "GALA",
+        "img": "https://cryptologos.cc/logos/gala-gala-logo.png?v=025",
+        "name": "Gala",
+        "address": "0xd1d2Eb1B1e90B638588728b4130137D262C87cae",
+        "decimals": 18
+    },
+    {
+        "ticker": "DSLA",
+        "img": "https://cdn.moralis.io/eth/0x3affcca64c2a6f4e3b6bd9c64cd2c969efd1ecbe.png",
+        "name": "DSLA Protocol",
+        "address": "0x3affcca64c2a6f4e3b6bd9c64cd2c969efd1ecbe",
+        "decimals": 18
+    },
+    {
+        "ticker": "GRT",
+        "img": "https://cdn.moralis.io/eth/0xc944e90c64b2c07662a292be6244bdf05cda44a7.png",
+        "name": "The Graph",
+        "address": "0xc944e90c64b2c07662a292be6244bdf05cda44a7",
+        "decimals": 18
+    },
+    {
+        "ticker": "SUSHI",
+        "img": "https://cdn.moralis.io/eth/0x6b3595068778dd592e39a122f4f5a5cf09c90fe2.png",
+        "name": "SushiSwap",
+        "address": "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2",
+        "decimals": 18
+    },
+    {
+        "ticker": "MVL",
+        "img": "https://cryptologos.cc/logos/mvl-mvl-logo.png?v=025",
+        "name": "MVL",
+        "address": "0xa849eaae994fb86afa73382e9bd88c2b6b18dc71",
+        "decimals": 18
+    }
+]

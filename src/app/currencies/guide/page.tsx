@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { FC } from 'react'
 import btcImage from '../../../images/btcImg.jpeg'
 import BitcoinImg from '../../../images/BitcoinImg.jpeg'
 import ethImage from '../../../images/ethImg.png'
