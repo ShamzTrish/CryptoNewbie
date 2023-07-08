@@ -6,24 +6,21 @@
 
 :root {
   --foreground-rgb: 0, 0, 25;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 25;
     --dark-background-color: 0, 0, 25;
-    --light-background-color: 128, 128, 135;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(0, 0, 25);
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
 }
+
 
 .scrollbar-w-2::-webkit-scrollbar {
   width: 0.25rem;

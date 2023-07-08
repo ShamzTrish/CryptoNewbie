@@ -23,10 +23,10 @@ const Trending: FC<TrendingProps> = ({ }) => {
 
     return <>
         {trendingData.length ? (
-            <div className="w-50 sm:w-full max-w-md p-8 mt-11 border rounded-lg shadowbg-gray-800 border-gray-700 bg-gray-800 mb-5 md:mb-10 lg:ml-10 mx-auto shadow-xl dark:shadow-md">
+            <div className="w-[350px] sm:w-full max-w-md p-8 mt-11 border rounded-lg shadowbg-gray-800 border-gray-700 bg-gray-800 mb-5 md:mb-10 lg:ml-10 mx-auto shadow-md overflow-auto">
                 <div className="flex items-center justify-between">
-                    <h5 className="text-xl font-bold leading-none mb-4 border-b-4 text-white border-b-blue-600">Trending Cryptocurrency</h5>
-                </div>
+                    <h5 className="text-xl font-bold leading-none text-white mb-4 border-b-4 border-b-blue-600">Trending Cryptocurrency</h5>
+                </div >
                 <div className="flow-root">
                     <ul role="list" className="divide-y divide-gray-700">
 
@@ -57,9 +57,9 @@ const Trending: FC<TrendingProps> = ({ }) => {
                         ))}
                     </ul>
                 </div>
-            </div>
+            </div >
         ) : (
-            <div className="w-50 sm:w-full max-w-md p-8 mt-11 border rounded-lg shadowbg-gray-800 border-gray-700 bg-gray-800 mb-5 md:mb-10 lg:ml-10 mx-auto shadow-xl dark:shadow-md">
+            <div className="w-50 sm:w-full max-w-md p-8 mt-11 border rounded-lg shadowbg-gray-800 border-gray-700 bg-gray-800 mb-5 md:mb-10 lg:ml-10 mx-auto shadow-md">
                 <div className="flex items-center justify-between">
                     <h5 className="text-xl font-bold leading-none text-white mb-4 border-b-4 border-b-blue-600">Trending Cryptocurrency</h5>
                 </div>

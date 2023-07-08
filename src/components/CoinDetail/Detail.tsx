@@ -9,7 +9,7 @@ interface DetailProps {
 }
 
 const styles = {
-    title: `dark:text-gray-400 text-slate-900 font-medium whitespace-nowrap mr-2`,
+    title: `text-gray-400 font-medium whitespace-nowrap mr-2`,
 }
 
 
@@ -30,7 +30,7 @@ const Detail: FC<DetailProps> = ({ }) => {
 
 
     return (
-        <main className='max-w-screen-xl mx-auto text-slate-900 dark:text-zinc-300'>
+        <main className='max-w-screen-xl mx-auto text-zinc-300'>
             <div className='flex max-w-screen-2xl m-auto pt-10 flex-col justify-between lg:flex-row'>
                 <div className='flex flex-col'>
                     <div className='flex flex-col sm:flex-row justify-between'>
@@ -54,16 +54,16 @@ const Detail: FC<DetailProps> = ({ }) => {
                         </div>
                         <div className='pl-5 pt-5 sm:pl-0 sm:pt-0'>
                             <div className='flex pb-1'>
-                                <p className='text-slate-900 dark:text-zinc-400 font-medium'>
+                                <p className='text-zinc-400 font-medium'>
                                     {detailCoin?.name} ({detailCoin?.symbol.toLocaleUpperCase()})
                                 </p>
                             </div>
                             <div className='flex items-start'>
-                                <h1 className='dark:text-zinc-200 text-slate-900 text-4xl'>{currencyFormat(currentPrice)}</h1>
+                                <h1 className='text-zinc-200 text-4xl'>{currencyFormat(currentPrice)}</h1>
                                 &nbsp;&nbsp;&nbsp;
                                 <div className={cn('flex items-center px-3 py-1.5 ml-3 rounded-xl text-zinc-200', {
-                                    'dark:bg-green-600 bg-green-700': priceChange24h > 0,
-                                    'dark:bg-red-600 bg-red-700': priceChange24h < 0,
+                                    'bg-green-600': priceChange24h > 0,
+                                    'bg-red-600': priceChange24h < 0,
 
                                 })}>
                                     {priceChange24h > 0 ? (
@@ -157,13 +157,13 @@ const Detail: FC<DetailProps> = ({ }) => {
                 <div className='flex mt-5 lg:mt-0 mx-auto lg:mx-0'>
                     <div className='flex items-center justify-center'>
                         <Image src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" width={300} height={300} className='rounded-xl' />
+
                     </div>
                 </div>
-
-
             </div>
         </main >
     )
+
 }
 
 export default Detail

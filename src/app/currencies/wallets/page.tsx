@@ -12,21 +12,21 @@ const page = ({ }) => {
     return <>
 
         {/* Container */}
-        <div className="container w-full md:max-w-4xl mx-auto pt-26 text-slate-900 dark:text-[#cccbcb]">
+        <div className="container w-full md:max-w-4xl mx-auto pt-26 text-[#cccbcb]">
 
             <div className="w-full mt-10 px-4 md:px-6 text-l leading-normal">
 
 
                 {/* <!--Title--> */}
                 <div>
-                    <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Everything you need to<br /> know about <span className="underline underline-offset-3 decoration-8 decoration-blue-600"><br />Hardware Wallets</span></h1>
-                    <p className="text-lg font-normal mt-3 mb-3 text-gray-700 lg:text-xl dark:text-gray-400"> In the world of cryptocurrency, security is paramount. That&apos;s where hardware wallets come in. These specialized devices provide a secure way to store and protect your private keys, ensuring the safety of your valuable digital assets. </p>
+                    <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white">Everything you need to<br /> know about <span className="underline underline-offset-3 decoration-8 decoration-blue-600"><br />Hardware Wallets</span></h1>
+                    <p className="text-lg font-normal mt-3 mb-3 lg:text-xl text-gray-400"> In the world of cryptocurrency, security is paramount. That&apos;s where hardware wallets come in. These specialized devices provide a secure way to store and protect your private keys, ensuring the safety of your valuable digital assets. </p>
                     <Image src={walletImg} alt='photo' width={900} height={10} className='mb-6' />
 
                 </div>
 
                 {/* LORE */}
-                <p className="mb-3 text-gray-700 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-green-600 dark:first-letter:text-green-500 first-letter:mr-1 first-letter:float-left">H<br />ardware wallet is essential for many of us. Aside from helping us feel more connected to our funds, hardware wallets keep us safe and give us peace of mind when using digital currencies.
+                <p className="mb-3 text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-green-500 first-letter:mr-1 first-letter:float-left">H<br />ardware wallet is essential for many of us. Aside from helping us feel more connected to our funds, hardware wallets keep us safe and give us peace of mind when using digital currencies.
                     <br />
                     My mission for the past few years is to help people understand cryptocurrencies and keep them safe when using them. A hardware wallet is one of the most essential components in securing your cryptocurrency.
                     <br /><br />
@@ -37,7 +37,7 @@ const page = ({ }) => {
 
 
                 {/* SUB HEADER 1 */}
-                <h5 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white"><span className="underline underline-offset-3 decoration-8 decoration-blue-600"><br /> What are hardware wallets? </span></h5>
+                <h5 className="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-4xl text-white"><span className="underline underline-offset-3 decoration-8 decoration-blue-600"><br /> What are hardware wallets? </span></h5>
 
                 {/* P1 */}
                 <p className="py-6">The short of it is that hardware wallets are portable devices that give us secure access to our crypto. They function by generating a user&apos;s private keys in a secure, offline environment while featuring an easy-to-use display. They usually connect via USB or Bluetooth to internet-connected devices like your computer. A separate screen on the wallet is used to verify and approve transactions to help prevent the disclosure of sensitive information to the internet-connected device. This combines to be very handy as you don&apos;t have to worry about a computer being compromised.
@@ -46,12 +46,12 @@ const page = ({ }) => {
                 </p>
 
                 {/* SUBH HEADER 2 */}
-                <h5 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white"><span className="underline underline-offset-3 decoration-8 decoration-blue-600"><br />Swiss Bank in your pocket !</span></h5>
+                <h5 className="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-4xl text-white"><span className="underline underline-offset-3 decoration-8 decoration-blue-600"><br />Swiss Bank in your pocket !</span></h5>
 
                 {/* P2 */}
                 <p className="py-6">In addition to the aforementioned benefits, it is crucial to emphasize the importance of keeping track of your passwords and securely storing them! When using a hardware wallet, it is common to have a recovery seed phrase—a series of words that acts as a backup to restore your wallet in case of loss or damage. This seed phrase should be treated with the utmost care and stored in a secure location, preferably offline and away from prying eyes.
 
-                    <h1 className="border-l-4 border-green-600 dark:border-green-500 font-medium text-xl italic my-8 pl-8 md:pl-12">NOT YOUR KEYS, NOT YOUR CRYPTO!</h1>
+                    <h1 className="border-l-4 border-green-500 font-medium text-xl italic my-8 pl-8 md:pl-12">NOT YOUR KEYS, NOT YOUR CRYPTO!</h1>
 
                     Remembering and storing passwords can be challenging, but it is essential to prioritize security. Consider using a password manager to securely store your login credentials and recovery seed phrase. Additionally, refrain from sharing your passwords or recovery phrases with anyone and avoid storing them digitally or in easily accessible places.
                     <br />   <br />
@@ -61,11 +61,11 @@ const page = ({ }) => {
 
 
                 {/* SUBH EADER 3 */}
-                <h5 className="mb-8 text-4xl mt-10 font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white">A Deep Dive into the <br />Pros & Cons of 3<span className="underline underline-offset-3 decoration-8 decoration-blue-600"><br />Popular Hardware Wallets<br /></span></h5>
-                <p className="text-lg font-normal mt-3 mb-10 text-gray-700 lg:text-xl dark:text-gray-400">  We&apos;ve analyzed these three exceptional hardware wallets so you don&apos;t have to! Each with strong values and advanced features. Our in-depth comparison aims to guide you in finding the right fit. Let our analysis be your compass to safeguarding your digital wealth.</p>
+                <h5 className="mb-8 text-4xl mt-10 font-extrabold leading-none tracking-tight md:text-4xl lg:text-5xl text-white">A Deep Dive into the <br />Pros & Cons of 3<span className="underline underline-offset-3 decoration-8 decoration-blue-600"><br />Popular Hardware Wallets<br /></span></h5>
+                <p className="text-lg font-normal mt-3 mb-10 lg:text-xl text-gray-400">  We&apos;ve analyzed these three exceptional hardware wallets so you don&apos;t have to! Each with strong values and advanced features. Our in-depth comparison aims to guide you in finding the right fit. Let our analysis be your compass to safeguarding your digital wealth.</p>
 
                 {/* 1# PRODUCTS HEADER # LEDGER */}
-                <h5 className="mb-4 py-6 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-2xl dark:text-white"><span># 1</span><span className="border-l-4 ml-4 dark:border-green-500 border-green-600 text-xl italic my-2 pl-8 md:pl-12 ">Ledger Nano X Hardware Wallet </span></h5>
+                <h5 className="mb-4 py-6 text-2xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-2xl text-white"><span># 1</span><span className="border-l-4 ml-4 border-green-500  text-xl italic my-2 pl-8 md:pl-12 ">Ledger Nano X Hardware Wallet </span></h5>
                 <div className='flex justify-center'>
                     <Image src={LedgerNanoX} alt='photo' width={400} height={10} className='mb-6 ' />
                 </div>
@@ -87,7 +87,7 @@ const page = ({ }) => {
 
 
                 {/* 2# PRODUCTS HEADER # TREZOR */}
-                <h5 className="mb-4 py-6 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-2xl dark:text-white"><span># 2</span><span className="border-l-4 ml-4 dark:border-green-500 border-green-600 text-xl italic my-2 pl-8 md:pl-12 ">Trezor One Hardware Wallet</span></h5>
+                <h5 className="mb-4 py-6 text-2xl font-extrabold leading-none tracking-tight  md:text-4xl lg:text-2xl text-white"><span># 2</span><span className="border-l-4 ml-4 border-green-500 text-xl italic my-2 pl-8 md:pl-12 ">Trezor One Hardware Wallet</span></h5>
                 <div className='flex justify-center'>
                     <Image src={TrezorOne} alt='photo' width={400} height={10} className='mb-6 ' />
                 </div>
@@ -118,7 +118,7 @@ const page = ({ }) => {
 
 
                 {/* 3# PRODUCTS HEADER # BITBOX02 */}
-                <h5 className="mb-4 py-6 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-2xl dark:text-white"><span># 3</span><span className="border-l-4 ml-4 dark:border-green-500 border-green-600 text-xl italic my-2 pl-8 md:pl-12 ">BitBox02 Hardware Wallet</span></h5>
+                <h5 className="mb-4 py-6 text-2xl font-extrabold leading-none tracking-tight  md:text-4xl lg:text-2xl text-white"><span># 3</span><span className="border-l-4 ml-4 border-green-500 text-xl italic my-2 pl-8 md:pl-12 ">BitBox02 Hardware Wallet</span></h5>
                 <div className='flex justify-center'>
                     <Image src={BitBox} alt='photo' width={400} height={10} className='mb-6 ' />
                 </div>
@@ -138,16 +138,16 @@ const page = ({ }) => {
 
 
                 {/* PRODUCTS */}
-                <p className="font-normal mt-16 mb-10 text-gray-700 lg:text-xl dark:text-gray-400 border-l-4 dark:border-green-500 border-green-600 italic my-8 pl-8 md:pl-8">&quot;By equipping yourself with a hardware wallet, you&apos;re not merely joining the cryptocurrency revolution, you&apos;re securing your place in it. Safeguarding your digital assets becomes effortless, allowing you to explore the possibilities and potential of this exciting landscape with peace of mind.&quot;</p>
+                <p className="font-normal mt-16 mb-10 lg:text-xl text-gray-400 border-l-4 border-green-500 italic my-8 pl-8 md:pl-8">&quot;By equipping yourself with a hardware wallet, you&apos;re not merely joining the cryptocurrency revolution, you&apos;re securing your place in it. Safeguarding your digital assets becomes effortless, allowing you to explore the possibilities and potential of this exciting landscape with peace of mind.&quot;</p>
                 <div className='flex gap-6 flex-wrap sm:gap-4 sm:flex-nowrap lg:gap-6'>
                     {/* Ledger Nano X */}
-                    <div className="w-50 max-w-sm bg-zinc-200 border border-gray-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div className="w-50 max-w-sm  border rounded-lg shadow bg-gray-800 border-gray-700">
                         <a href="https://shop.ledger.com/products/ledger-nano-x" target='_blank'>
                             <Image className="p-4  rounded-t-lg" src={LedgerNanoX} alt="product image" />
                         </a>
                         <div className="px-5 pb-5">
                             <a href="https://shop.ledger.com/products/ledger-nano-x" target='_blank'>
-                                <h5 className="text-sm font-semibold tracking-tight text-gray-900 dark:text-white">Secure, buy, exchange, grow your crypto and your NFTs with our hardware wallet</h5>
+                                <h5 className="text-sm font-semibold tracking-tight text-white">Secure, buy, exchange, grow your crypto and your NFTs with our hardware wallet</h5>
                             </a>
                             <div className="flex items-center mt-2.5 mb-5">
                                 <svg aria-hidden="true" className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -155,25 +155,25 @@ const page = ({ }) => {
                                 <svg aria-hidden="true" className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                 <svg aria-hidden="true" className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                 <svg aria-hidden="true" className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                                <span className="text-xs font-semibold mr-2 px-2.5 py-0.5 rounded bg-blue-200 text-blue-800 ml-3">5.0</span>
                             </div>
                             <div className="flex items-center justify-between">
                                 <div>
-                                    <span className='font-thin text-xs pt-2 mr-1'>from</span><span className="text-2xl font-bold text-gray-900 dark:text-white">$165</span>
+                                    <span className='font-thin text-xs pt-2 mr-1'>from</span><span className="text-2xl font-bold text-white">$165</span>
                                 </div>
-                                <a href="https://shop.ledger.com/products/ledger-nano-x" target='_blank' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-10 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View</a>
+                                <a href="https://shop.ledger.com/products/ledger-nano-x" target='_blank' className="text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-10 py-2 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">View</a>
                             </div>
                         </div>
                     </div>
                     {/* BitBox */}
 
-                    <div className="w-50 max-w-sm bg-zinc-200 border border-gray-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div className="w-50 max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700">
                         <a href="https://bitbox.swiss/bitbox02/" target='_blank'>
                             <Image className="p-8 rounded-t-lg w-lg" src={BitBox} alt="product image" />
                         </a>
                         <div className="px-5 pb-5">
                             <a href="https://bitbox.swiss/bitbox02/" target='_blank'>
-                                <h5 className="text-sm font-semibold tracking-tight text-gray-900 dark:text-white">Protect your coins with the latest Swiss made hardware wallet</h5>
+                                <h5 className="text-sm font-semibold tracking-tight text-white">Protect your coins with the latest Swiss made hardware wallet</h5>
                             </a>
                             <div className="flex items-center mt-2.5 mb-5">
                                 <svg aria-hidden="true" className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -181,25 +181,25 @@ const page = ({ }) => {
                                 <svg aria-hidden="true" className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                 <svg aria-hidden="true" className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                 <svg aria-hidden="true" className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                                <span className="text-xs font-semibold mr-2 px-2.5 py-0.5 rounded bg-blue-200 text-blue-800 ml-3">5.0</span>
                             </div>
                             <div className="flex items-center justify-between">
                                 <div>
-                                    <span className='font-thin text-xs pt-2 mr-1'>from</span><span className="text-2xl font-bold text-gray-900 dark:text-white">$148</span>
+                                    <span className='font-thin text-xs pt-2 mr-1'>from</span><span className="text-2xl font-bold text-white">$148</span>
                                 </div>
-                                <a href="https://shop.ledger.com/products/ledger-nano-x" target='_blank' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-10 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View</a>
+                                <a href="https://shop.ledger.com/products/ledger-nano-x" target='_blank' className="text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-10 py-2 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">View</a>
                             </div>
                         </div>
                     </div>
 
                     {/* Trezor One*/}
-                    <div className="w-50 max-w-sm bg-zinc-200 border border-gray-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div className="w-50 max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700">
                         <a href="https://trezor.io/trezor-model-one" target='_blank'>
                             <Image className="rounded-t-lg" src={TrezorOne} alt="product image" />
                         </a>
                         <div className="px-5 pb-1">
                             <a href="https://trezor.io/trezor-model-one" target='_blank'>
-                                <h5 className="text-sm font-semibold tracking-tight text-gray-900 dark:text-white">The Trezor Model One is the #1 Bitcoin hardware wallet choice</h5>
+                                <h5 className="text-sm font-semibold tracking-tight text-white">The Trezor Model One is the #1 Bitcoin hardware wallet choice</h5>
                             </a>
                             <div className="flex items-center mt-2 mb-5">
                                 <svg aria-hidden="true" className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -207,13 +207,13 @@ const page = ({ }) => {
                                 <svg aria-hidden="true" className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                 <svg aria-hidden="true" className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                 <svg aria-hidden="true" className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                                <span className="text-xs font-semibold mr-2 px-2.5 py-0.5 rounded bg-blue-200 text-blue-800 ml-3">5.0</span>
                             </div>
                             <div className="flex items-center justify-between">
                                 <div>
-                                    <span className='font-thin text-xs pt-2 mr-1'>from</span><span className="text-2xl font-bold text-gray-900 dark:text-white">$69</span>
+                                    <span className='font-thin text-xs pt-2 mr-1'>from</span><span className="text-2xl font-bold text-white">$69</span>
                                 </div>
-                                <a href="https://shop.ledger.com/products/ledger-nano-x" target='_blank' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-10 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View</a>
+                                <a href="https://shop.ledger.com/products/ledger-nano-x" target='_blank' className="text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-10 py-2 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">View</a>
                             </div>
                         </div>
                     </div>
@@ -221,18 +221,17 @@ const page = ({ }) => {
                 </div>
                 {/* FINAL NOTES */}
 
-
-
-                <blockquote className="border-l-4 border-green-600 dark:border-green-500 italic my-8 pl-8 md:pl-8"> We trust that this article has served as your guiding light, paving the way for you to make an informed decision. With a newfound understanding of hardware wallets, you now recognize their indispensability in the vast realm of the cryptoverse.</blockquote>
+                <blockquote className="border-l-4 border-green-500 italic my-8 pl-8 md:pl-8"> We trust that this article has served as your guiding light, paving the way for you to make an informed decision. With a newfound understanding of hardware wallets, you now recognize their indispensability in the vast realm of the cryptoverse.</blockquote>
             </div>
 
             {/* <!--Tags --> */}
             <div className="text-base md:text-sm text-gray-500 px-4 py-6" >
-                <Link href="/" className="text-base md:text-sm text-slate-900 no-underline hover:no-underline rounded-lg py-3 px-6 dark:bg-green-500 bg-green-600 border-none hover:text-zinc-100 hover:bg-green-500 dark:hover:bg-green-600">Go Back</Link>
+                <Link href="/" className="text-base md:text-sm text-slate-900 no-underline hover:no-underline rounded-lg py-3 px-6 bg-green-500 border-none hover:text-zinc-100 hover:bg-green-600">Home Page</Link>
             </div >
         </div>
 
     </>
+
 
 }
 

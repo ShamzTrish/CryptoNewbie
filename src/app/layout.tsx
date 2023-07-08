@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={` bg-light-background dark:bg-dark-background`}>
+      <body className='bg-dark-background'>
         <Providers>
           <NavBar />
           <Chat />

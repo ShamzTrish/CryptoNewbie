@@ -34,7 +34,6 @@ module.exports = {
       },
       colors: {
         "dark-background": "rgb(0,0,25)",
-        "light-background": "rgb(205,205,205)",
       },
       boxShadow: {
         'lg': '0 0 8px 1px rgba(0, 217, 255)',
